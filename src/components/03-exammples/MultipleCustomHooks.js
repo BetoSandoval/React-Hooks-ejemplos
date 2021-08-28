@@ -8,7 +8,7 @@ export default function MultipleCustomHooks() {
   const {counter, increment} = useCounter(1);
 
   const {loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${counter}`);
-  console.log( data );
+ 
   const { author, quote } = !!data && data[0]; // si no existe la data trae el elemento cero del array
 
   return (
