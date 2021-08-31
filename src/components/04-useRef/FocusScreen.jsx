@@ -7,6 +7,7 @@ export default function FocusScreen() {
 
     const handleClick = () => {
         inputRef.current.select();
+        console.log(inputRef.current);
     }
 
     return (
