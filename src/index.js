@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import RealExampleRef from './components/04-useRef/RealExampleRef';
+import moduleName from '..'
+/* import RealExampleRef from './components/04-useRef/RealExampleRef'; */
 /* import FocusScreen from './components/04-useRef/FocusScreen'; */
 /* import MultipleCustomHooks from './components/03-exammples/MultipleCustomHooks'; */
 /* import FromWithCustomHook from './components/02-useEffect/FormWithCustomHook'; */
@@ -12,7 +13,7 @@ import RealExampleRef from './components/04-useRef/RealExampleRef';
  */
 ReactDOM.render(
   <React.StrictMode>
-    <RealExampleRef/>
+    <Layout/>
   </React.StrictMode>,
   document.getElementById('root')
 );
