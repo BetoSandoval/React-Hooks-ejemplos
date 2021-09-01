@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import useCounter from "../../hooks/useCounter";
 import useFetch from "../../hooks/useFetch";
 import "./layout.css";
@@ -13,10 +13,10 @@ export default function Layout() {
   const { author, quote } = !!data && data[0]; // si no existe la data trae el elemento cero del array
 
   const pTag = useRef();
-
+  const [boxSize, setBoxSixe] = useState({});  
   useLayoutEffect(() => {
-    console.log("hey");
-  }, []);
+    setBoxSixe(pTag.current.getBoundingClientRect());
+  }, [quote]);
 
   return (
     <div>
@@ -32,6 +32,10 @@ export default function Layout() {
           </p>
         <footer className="blockquote-footer mt-auto"> {author} </footer>
       </blockquote>
+
+      <pre>
+        { JSON.stringify( boxSize, null, 3 ) }
+      </pre>
 
       <button className="btn btn-primary" onClick={increment}>
         Siguiente quote

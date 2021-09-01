@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Layout from '../src/components/05-useLayotEffect/Layout';
+import Memorize from './components/06-memos/Memorize';
+/* import Layout from '../src/components/05-useLayotEffect/Layout'; */
 /* import RealExampleRef from './components/04-useRef/RealExampleRef'; */
 /* import FocusScreen from './components/04-useRef/FocusScreen'; */
 /* import MultipleCustomHooks from './components/03-exammples/MultipleCustomHooks'; */
@@ -11,9 +12,11 @@ import Layout from '../src/components/05-useLayotEffect/Layout';
 /* import CounterApp from './components/01-useState/CounterApp'; */
 /* import CounterWithCustomHook from './components/01-useState/CounterWithCustomHook';
  */
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <Layout/>
+    <Memorize/>
   </React.StrictMode>,
   document.getElementById('root')
 );
