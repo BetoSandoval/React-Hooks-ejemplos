@@ -23,8 +23,6 @@ export default function useFetch( url ) {
         .then( resp => resp.json() )
         .then( data => {
 
-            setTimeout( ()  => {
-
                 if( isMounted.current ){
                     setstate({
                         loading: false,
@@ -36,8 +34,6 @@ export default function useFetch( url ) {
                 }else{
                     console.log('setState no se llamó');
                 }
-
-            }, 4000);
         } );
     }, [ url ] );
 

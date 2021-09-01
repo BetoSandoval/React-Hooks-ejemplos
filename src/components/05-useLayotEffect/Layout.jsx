@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import useCounter from "../../hooks/useCounter";
 import useFetch from "../../hooks/useFetch";
 import "./layout.css";
@@ -12,13 +12,24 @@ export default function Layout() {
 
   const { author, quote } = !!data && data[0]; // si no existe la data trae el elemento cero del array
 
+  const pTag = useRef();
+
+  useLayoutEffect(() => {
+    console.log("hey");
+  }, []);
+
   return (
     <div>
       <h1>BreackingBad Quotes</h1>
       <hr />
 
       <blockquote className="blockquote text-right">
-        <p className="mb-0"> {quote} </p>
+        <p 
+          className="mb-0"
+          ref={pTag}
+        >
+          {quote}
+          </p>
         <footer className="blockquote-footer mt-auto"> {author} </footer>
       </blockquote>
 
