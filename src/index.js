@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import moduleName from '..'
+import Layout from '../src/components/05-useLayotEffect/Layout';
 /* import RealExampleRef from './components/04-useRef/RealExampleRef'; */
 /* import FocusScreen from './components/04-useRef/FocusScreen'; */
 /* import MultipleCustomHooks from './components/03-exammples/MultipleCustomHooks'; */
