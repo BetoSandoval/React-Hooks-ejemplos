@@ -10,4 +10,4 @@ export const Small = React.memo( ( {value} ) => {
             </small>
         );
     }
- )
+);
