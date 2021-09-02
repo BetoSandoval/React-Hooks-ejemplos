@@ -18,7 +18,7 @@ export default function MemoHook() {
             </button>
 
             <button
-                className="btn btn-primary ml-3"
+                className="btn btn-outline-primary mx-3"
                 onClick={ () => {
                     setShow( !show );
                 } }
