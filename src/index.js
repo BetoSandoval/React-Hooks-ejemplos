@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CalbbackHook from './components/06-memos/CallbackHook';
 
+// import { Padre } from './components/07-tarea-memo/Padre';
+/* import CalbbackHook from './components/06-memos/CallbackHook'; */
 /* import MemoHook from './components/06-memos/MemoHook'; */
 /* import Memorize from './components/06-memos/Memorize'; */
 /* import Layout from '../src/components/05-useLayotEffect/Layout'; */
@@ -14,11 +15,14 @@ import CalbbackHook from './components/06-memos/CallbackHook';
 /* import CounterApp from './components/01-useState/CounterApp'; */
 /* import CounterWithCustomHook from './components/01-useState/CounterWithCustomHook';
  */
+// import './components/08-useReducer/intro-reducer';
+import TodoApp from './components/08-useReducer/TodoApp';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <CalbbackHook/>
+    <TodoApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
+

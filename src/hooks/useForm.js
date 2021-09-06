@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-export default function useFrom(initialState = {}) {
-  const [values, setValues] = useState(initialState);
+export default function useFrom( initialState = {} ) {
+
+  const [values, setValues] = useState( initialState );
 
   const reset = () => {
     setValues(initialState);
